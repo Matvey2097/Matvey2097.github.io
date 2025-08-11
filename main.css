@@ -1,0 +1,80 @@
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-image: url(https://images.wallpaperscraft.ru/image/single/dom_les_priroda_148942_2560x1600.jpg);
+  color: #FFFF00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  margin-bottom: 4em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#FF4500;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 50px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+  height: 320px;
+  width: 320px;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #00FFFF;
+}
+
+p {
+ color: #0000CD;    
+}
+
+p:hover{
+  color: #00FFFF;
+}
+
+h3 {
+  font-size: 17px;
+  font-style: normal;
+  font-family: Helvetica;
+  color: #4682B4;
+
+}
